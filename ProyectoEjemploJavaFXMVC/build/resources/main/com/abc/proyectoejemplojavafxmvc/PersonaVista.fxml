@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2c0116;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.abc.proyectoejemplojavafxmvc.PersonaControlador">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#40030339" height="60.0" layoutX="133.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="338.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#40030334" height="60.0" layoutX="132.0" layoutY="188.0" stroke="BLACK" strokeType="INSIDE" width="338.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#40030330" height="60.0" layoutX="132.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="338.0" />
+      <Label layoutX="145.0" layoutY="62.0" text="Nombre completo" textFill="#fffdfd">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreTextField" layoutX="145.0" layoutY="83.0" prefHeight="17.0" prefWidth="313.0" />
+      <Label layoutX="145.0" layoutY="125.0" text="Género" textFill="#fffefe">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="generoComboBox" layoutX="145.0" layoutY="146.0" prefHeight="25.0" prefWidth="313.0" promptText="Escoger género" />
+      <Label layoutX="143.0" layoutY="190.0" text="Fecha de nacimiento" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="aNacDatePicker" layoutX="145.0" layoutY="212.0" prefHeight="25.0" prefWidth="313.0" />
+      <Button layoutX="167.0" layoutY="334.0" mnemonicParsing="false" onAction="#guardarDatos" text="Guardar datos" />
+      <Button fx:id="mostrarDatosButton" layoutX="341.0" layoutY="334.0" mnemonicParsing="false" onAction="#mostrarDatos" text="Mostrar datos" />
+      <Label fx:id="resultadosLabel" layoutX="150.0" layoutY="283.0" prefHeight="21.0" prefWidth="304.0" textFill="#0040ff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorIngresoDatosLabel" layoutX="151.0" layoutY="304.0" prefHeight="17.0" prefWidth="304.0" textFill="RED" />
+   </children>
+</AnchorPane>
