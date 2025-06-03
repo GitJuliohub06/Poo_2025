@@ -12,19 +12,3 @@ Editor → General → Code Completion
 
 
 
-USO TRY CATCH 
-int numero = 0;
-boolean valido = false;
-
-while (!valido) {
-    try {
-        System.out.print("Ingrese un número: ");
-        numero = scanner.nextInt();
-        valido = true; // si llega aquí, todo bien
-    } catch (InputMismatchException e) {
-        System.out.println("Error: Ingrese un número válido.");
-        scanner.nextLine(); // limpiar entrada inválida
-    }
-}
-System.out.println("Número ingresado correctamente: " + numero);
-
