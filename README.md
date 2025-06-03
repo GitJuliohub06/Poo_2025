@@ -10,5 +10,5 @@ Editor → General → Code Completion
 
 ✅ Sort suggestions alphabetically
 
-
+labo de esto: https://github.com/UCASV/01-2025-poo-ucasv-poo-01-2025-laboratorio-2-POO-template-lab1
 
