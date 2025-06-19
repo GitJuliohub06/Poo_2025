@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proyecto.demo.HelloController">
+   <children>
+      <TextField fx:id="alturaTextField" layoutX="49.0" layoutY="43.0" text="altura" />
+      <TextField fx:id="radioTextField" layoutX="363.0" layoutY="43.0" text="radio" />
+      <TextField fx:id="baseTextField" layoutX="226.0" layoutY="132.0" text="base" />
+      <Button fx:id="buildCirculoButton" onAction="#construirCirc" layoutX="98.0" layoutY="188.0" mnemonicParsing="false" text="circulo" />
+      <Button fx:id="buildRectanguloButton" onAction="#construirRect" layoutX="438.0" layoutY="201.0" mnemonicParsing="false" text="cuadrado" />
+   </children>
+</AnchorPane>
